@@ -1,0 +1,13 @@
+{
+    "N_conflicts": 27,
+    "N_classified": 16,
+    "N_proactive": 5,
+    "N_reactive": 4,
+    "N_nonyield": 7,
+    "N_unclassified": 11,
+    "EthicalAlignment": 0.3333333333333333,
+    "VRUPriorityScore": 0.18518518518518517,
+    "EthicalAlignmentClassified": 0.5625,
+    "VRUPriorityScoreClassified": 0.3125,
+    "ClassificationCoverage": 0.5925925925925926
+}

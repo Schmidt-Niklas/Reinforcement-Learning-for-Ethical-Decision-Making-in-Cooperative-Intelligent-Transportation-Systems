@@ -1,0 +1,30 @@
+{
+  "junction_id": "cluster_1993435776_496053514",
+  "VEH_OUT_EDGES": [
+    "-201953160#1",
+    "-208010459#1",
+    "-40799279",
+    "201953160#3"
+  ],
+  "VRU_INNER_EDGES": [
+    "-201953160#1",
+    "-201953160#4",
+    "-208010459#1",
+    "-40799279",
+    "201953160#0",
+    "201953160#3",
+    "208010459#1",
+    "40799279"
+  ],
+  "meta": {
+    "net": "C:\\Users\\49151\\Desktop\\Master\\07_Masterthesis\\00_InTas_New - RL\\new_ingolstadt.net.xml",
+    "include_micro_as_vehicle": false,
+    "strict_ped_lanes": false,
+    "ambiguous_edges_vehicle_and_pedestrian": [
+      "-201953160#1",
+      "-208010459#1",
+      "-40799279",
+      "201953160#3"
+    ]
+  }
+}
