@@ -79,3 +79,6 @@ Calculates collision and surrogate-safety outcomes, including localized critical
 
 - throughput_output.py
 Calculates completed cars, buses, pedestrians, and total traffic participants per simulation minute.
+
+
+![Flowchart of the RL-Trainings Pipeline (Generated with AI assistance)](Trainingspipeline/Flowchart%20RL%20Trainingspipeline.png)
