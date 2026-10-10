@@ -45,34 +45,14 @@ Records the corresponding training metrics for the ethics-enhanced agent, includ
 **Outcome Evaluation:**
 The Outcome Evaluation directory contains the scripts used to execute and independently evaluate the native SUMO Baseline and the selected operational and ethics-enhanced policies.
 
-- analyze_ethics_events_v2.py
-Analyzes the pair-based vehicle–VRU interaction events and performs additional calculations and consistency checks for the Ethics evaluation.
-compare_selected_agents.py
-Loads the evaluation results of Baseline, the operational agent, and the ethics-enhanced agent and generates the comparative result figures.
-
 - config.py
 Defines paths, scenario settings, simulation intervals, selected policy files, and other parameters required by the evaluation pipeline.
 
-- dashboard.py
-Combines the calculated Safety, Throughput, Fairness, and Ethics metrics into a scenario-specific result dashboard.
+- run_outcome_evaluation.py
+Provides the main entry point for running the complete Final Outcome Evaluation.
 
 - esrm_runner.py
 Executes the configured control strategy in SUMO and coordinates simulation output generation and pair-based interaction tracking.
-
-- ethics_output_final.py
-Provides the original implementation for calculating aggregated Ethics outcomes from the tracked interaction events.
-
-- ethics_output_final_V2.py
-Calculates the final pair-based Ethics outcomes, including interaction Criticality, Yielding Behaviour, Classification Coverage, mitigation-burden allocation, Ethical Alignment, and the VRU Priority Score V2.
-
-- fairness_waiting_output.py
-Calculates within-group waiting-time equality and cross-group Fairness for cars, buses, and vulnerable road users.
-
-- plot_tb_dashboard_v3.py
-Processes logged evaluation or dashboard metrics and creates the corresponding summary plots.
-
-- run_outcome_evaluation.py
-Provides the main entry point for running the complete Final Outcome Evaluation.
 
 - safety_output_final.py
 Calculates collision and surrogate-safety outcomes, including localized critical events and Time Integrated TTC.
@@ -80,6 +60,21 @@ Calculates collision and surrogate-safety outcomes, including localized critical
 - throughput_output.py
 Calculates completed cars, buses, pedestrians, and total traffic participants per simulation minute.
 
+
+- fairness_waiting_output.py
+Calculates within-group waiting-time equality and cross-group Fairness for cars, buses, and vulnerable road users.
+
+- ethics_output_final_V2.py
+Calculates the final pair-based Ethics outcomes, including interaction Criticality, Yielding Behaviour, Classification Coverage, mitigation-burden allocation, Ethical Alignment, and the VRU Priority Score V2.
+
+- plot_tb_dashboard_v3.py
+Processes logged evaluation or dashboard metrics and creates the corresponding summary plots.
+
+- analyze_ethics_events_v2.py
+Analyzes the pair-based vehicle–VRU interaction events and performs additional calculations and consistency checks for the Ethics evaluation.
+
+- compare_selected_agents.py
+Loads the evaluation results of Baseline, the operational agent, and the ethics-enhanced agent and generates the comparative result figures.
 
 ![Python pipeline of the Final Outcome Evaluation](Outcome%20Evaluation/Python%20pipeline%20of%20the%20Final%20Outcome%20Evaluation.png)
 
