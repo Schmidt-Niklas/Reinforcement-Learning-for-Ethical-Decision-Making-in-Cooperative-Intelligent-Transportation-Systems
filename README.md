@@ -3,8 +3,7 @@
 This repository contains the Python implementation developed for training and evaluating infrastructure-level reinforcement-learning policies in a multimodal SUMO traffic scenario. The project compares an operational agent based on Safety, Throughput, and Fairness with an ethics-enhanced agent that additionally considers interaction criticality and road-user vulnerability. The evaluation investigates both conventional traffic performance and the allocation of mitigation responsibility in vehicle–VRU interactions.
 
 **Trainingspipeline:** 
-The Trainingspipeline directory contains the custom reinforcement-learning environment, reward modules, intervention controller, tracking components, callbacks, and PPO training scripts.
-![Flowchart of the RL-Trainings Pipeline (Generated with AI assistance)](Trainingspipeline/Flowchart%20RL%20Trainingspipeline.png)
+The Trainingspipeline directory contains the custom reinforcement-learning environment, reward modules, intervention controller, tracking components, callbacks, and PPO training scripts. ![Flowchart of the RL-Trainings Pipeline (Generated with AI assistance)](Trainingspipeline/Flowchart%20RL%20Trainingspipeline.png)
 
 
 - train_ppo_v4.py
@@ -43,7 +42,8 @@ Records the corresponding training metrics for the ethics-enhanced agent, includ
 
 
 **Outcome Evaluation:**
-The Outcome Evaluation directory contains the scripts used to execute and independently evaluate the native SUMO Baseline and the selected operational and ethics-enhanced policies.
+The Outcome Evaluation directory contains the scripts used to execute and independently evaluate the native SUMO Baseline and the selected operational and ethics-enhanced policies. 
+![Python pipeline of the Final Outcome Evaluation](Outcome%20Evaluation/Python%20pipeline%20of%20the%20Final%20Outcome%20Evaluation.png)
 
 - config.py
 Defines paths, scenario settings, simulation intervals, selected policy files, and other parameters required by the evaluation pipeline.
@@ -76,5 +76,4 @@ Analyzes the pair-based vehicle–VRU interaction events and performs additional
 - compare_selected_agents.py
 Loads the evaluation results of Baseline, the operational agent, and the ethics-enhanced agent and generates the comparative result figures.
 
-![Python pipeline of the Final Outcome Evaluation](Outcome%20Evaluation/Python%20pipeline%20of%20the%20Final%20Outcome%20Evaluation.png)
 
