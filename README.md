@@ -81,4 +81,4 @@ Calculates collision and surrogate-safety outcomes, including localized critical
 Calculates completed cars, buses, pedestrians, and total traffic participants per simulation minute.
 
 
-![Flowchart of the RL-Trainings Pipeline (Generated with AI assistance)](Trainingspipeline/Flowchart%20RL%20Trainingspipeline.png)
+![Python pipeline of the Final Outcome Evaluation]([Trainingspipeline/Flowchart%20RL%20Trainingspipeline.png](https://github.com/Schmidt-Niklas/Reinforcement-Learning-for-Ethical-Decision-Making-in-Cooperative-Intelligent-Transportation-Systems/blob/498c55244bdc103eb5ed4c72acc0de810b8e1f61/Outcome%20Evaluation/Python%20pipeline%20of%20the%20Final%20Outcome%20Evaluation.png))
