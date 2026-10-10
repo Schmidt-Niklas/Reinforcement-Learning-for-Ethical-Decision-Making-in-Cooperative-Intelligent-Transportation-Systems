@@ -7,30 +7,32 @@ The Trainingspipeline directory contains the custom reinforcement-learning envir
 ![Flowchart of the RL-Trainings Pipeline (Generated with AI assistance)](Trainingspipeline/Flowchart%20RL%20Trainingspipeline.png)
 
 
+- train_ppo_v4.py
+Configures and executes PPO training for the operational agent based on Safety, Throughput, and Fairness.
 
-- __init__.py
-Defines the directory as an importable Python package.
-
-- controller.py
-Translates the discrete action selected by the reinforcement-learning agent into an infrastructure-level traffic intervention and applies the intervention through TraCI.
+- train_ppo_ethics_V2.py
+Configures and executes PPO training for the ethics-enhanced agent using the additional Ethics-dependent reward modification.
 
 - env_V2.py
 Implements the Gym-compatible SUMO environment and coordinates episode initialization, action scheduling, simulation progression, interaction detection, reward gating, and communication with the PPO agent.
 
-- ethics.py
-Calculates the Ethical Pre-Crash Factor based on interaction criticality, severity, and road-user vulnerability.
+- observation.py
+Extracts the multimodal traffic observation, including interaction activity, surrogate-safety indicators, participant counts, waiting times, and the critical vehicle–VRU pair.
+
+- controller.py
+Translates the discrete action selected by the reinforcement-learning agent into an infrastructure-level traffic intervention and applies the intervention through TraCI.
+
+- reward.py
+Calculates the operational reward from Safety, Throughput, and Fairness.
 
 - ethics_tracker.py
 Tracks vehicle–VRU interaction pairs and stores pair-based events for the independent Final Outcome Evaluation.
 
-- observation.py
-Extracts the multimodal traffic observation, including interaction activity, surrogate-safety indicators, participant counts, waiting times, and the critical vehicle–VRU pair.
-
-- reward.py
-Calculates the operational reward from Safety, Throughput, Fairness, and action-dependent intervention penalties.
-
 - reward_ethics.py
 Applies the Ethics-dependent modification to the complete operational reward of the ethics-enhanced agent.
+
+- ethics.py
+Calculates the Ethical Pre-Crash Factor based on interaction criticality, severity, and road-user vulnerability.
 
 - stf_callback.py
 Records interaction, Safety, Throughput, Fairness, and objective-contribution metrics during the training of the operational agent.
@@ -38,11 +40,7 @@ Records interaction, Safety, Throughput, Fairness, and objective-contribution me
 - stfe_callback.py
 Records the corresponding training metrics for the ethics-enhanced agent, including Ethics-specific factors and reward adjustments.
 
-- train_ppo_v4.py
-Configures and executes PPO training for the operational agent based on Safety, Throughput, and Fairness.
 
-- train_ppo_ethics_V2.py
-Configures and executes PPO training for the ethics-enhanced agent using the additional Ethics-dependent reward modification.
 
 **Outcome Evaluation:**
 The Outcome Evaluation directory contains the scripts used to execute and independently evaluate the native SUMO Baseline and the selected operational and ethics-enhanced policies.
