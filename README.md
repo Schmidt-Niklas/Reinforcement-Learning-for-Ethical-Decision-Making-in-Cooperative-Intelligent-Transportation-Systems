@@ -4,6 +4,9 @@ This repository contains the Python implementation developed for training and ev
 
 **Trainingspipeline:** 
 The Trainingspipeline directory contains the custom reinforcement-learning environment, reward modules, intervention controller, tracking components, callbacks, and PPO training scripts.
+![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.](https://myoctocat.com/assets/images/base-octocat.svg)
+
+
 
 - __init__.py
 Defines the directory as an importable Python package.
