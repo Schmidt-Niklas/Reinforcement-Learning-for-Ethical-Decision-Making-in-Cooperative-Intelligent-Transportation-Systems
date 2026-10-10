@@ -4,7 +4,7 @@ This repository contains the Python implementation developed for training and ev
 
 **Trainingspipeline:** 
 The Trainingspipeline directory contains the custom reinforcement-learning environment, reward modules, intervention controller, tracking components, callbacks, and PPO training scripts.
-![Flowchart of the RL-Trainings Pipeline (Generated with AI assistance)](Trainingspipeline/Flowchart RL Trainingspipeline.png)
+![Flowchart of the RL-Trainings Pipeline (Generated with AI assistance)](Trainingspipeline/Flowchart%20RL%20Trainingspipeline.png)
 
 
 
